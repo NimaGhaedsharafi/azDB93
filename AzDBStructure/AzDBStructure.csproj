@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{775DEF8B-4C80-4313-8D1E-BB4B3EFC3520}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AzDBStructure</RootNamespace>
+    <AssemblyName>AzDBStructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="albums\addAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="albums\addAlbum.Designer.cs">
+      <DependentUpon>addAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="albums\Albums.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Albums.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="albums\AlbumsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="albums\AlbumsReport.Designer.cs">
+      <DependentUpon>AlbumsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="albums\showAlbums.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="albums\showAlbums.Designer.cs">
+      <DependentUpon>showAlbums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artists\addArtist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artists\addArtist.Designer.cs">
+      <DependentUpon>addArtist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artists\deleteArtists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artists\deleteArtists.Designer.cs">
+      <DependentUpon>deleteArtists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="artists\showArtists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artists\showArtists.Designer.cs">
+      <DependentUpon>showArtists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMusic.Designer.cs">
+      <DependentUpon>frmAddMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainPage.Designer.cs">
+      <DependentUpon>frmMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserMainPage.Designer.cs">
+      <DependentUpon>frmUserMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="geners\addGener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="geners\addGener.Designer.cs">
+      <DependentUpon>addGener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="geners\deleteGener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="geners\deleteGener.Designer.cs">
+      <DependentUpon>deleteGener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="geners\showGeners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="geners\showGeners.Designer.cs">
+      <DependentUpon>showGeners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Album.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\Artist.cs" />
+    <Compile Include="Model\DataAccess.cs" />
+    <Compile Include="Model\Gener.cs" />
+    <Compile Include="Model\Music.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="MusicStore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MusicStore.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="musics\addMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musics\addMusic.Designer.cs">
+      <DependentUpon>addMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musics\deleteMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musics\deleteMusic.Designer.cs">
+      <DependentUpon>deleteMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musics\showMusics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musics\showMusics.Designer.cs">
+      <DependentUpon>showMusics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="users\addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\deleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\deleteUser.Designer.cs">
+      <DependentUpon>deleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\showUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users\showUsers.Designer.cs">
+      <DependentUpon>showUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="albums\addAlbum.resx">
+      <DependentUpon>addAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="albums\Albums.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Albums.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="albums\AlbumsReport.resx">
+      <DependentUpon>AlbumsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="albums\showAlbums.resx">
+      <DependentUpon>showAlbums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artists\addArtist.resx">
+      <DependentUpon>addArtist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artists\deleteArtists.resx">
+      <DependentUpon>deleteArtists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="artists\showArtists.resx">
+      <DependentUpon>showArtists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddMusic.resx">
+      <DependentUpon>frmAddMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainPage.resx">
+      <DependentUpon>frmMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="geners\addGener.resx">
+      <DependentUpon>addGener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="geners\deleteGener.resx">
+      <DependentUpon>deleteGener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="geners\showGeners.resx">
+      <DependentUpon>showGeners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musics\addMusic.resx">
+      <DependentUpon>addMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musics\deleteMusic.resx">
+      <DependentUpon>deleteMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musics\showMusics.resx">
+      <DependentUpon>showMusics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="users\addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\deleteUser.resx">
+      <DependentUpon>deleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\showUsers.resx">
+      <DependentUpon>showUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MusicStore.xsc">
+      <DependentUpon>MusicStore.xsd</DependentUpon>
+    </None>
+    <None Include="MusicStore.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MusicStore.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MusicStore.xss">
+      <DependentUpon>MusicStore.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+E:\Programming\Windows Programming\C#\AzDBStructure\MusicStore\bin\Debug\MusicStore.dacpac
+E:\Programming\Windows Programming\C#\AzDBStructure\MusicStore\bin\Debug\MusicStore.dll
+E:\Programming\Windows Programming\C#\AzDBStructure\MusicStore\bin\Debug\MusicStore.pdb
+E:\Programming\Windows Programming\C#\AzDBStructure\MusicStore\obj\Debug\MusicStore.dll
+E:\Programming\Windows Programming\C#\AzDBStructure\MusicStore\obj\Debug\MusicStore.pdb
